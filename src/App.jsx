@@ -4,6 +4,7 @@ import { Building2, Gem, Trophy, Users2, ShieldCheck, Globe2, Mail, Phone, MapPi
 
 function LogoCO() {
   const fallback = (e) => {
+    // Si el enlace de Drive no carga, mostramos un monograma temporal
     e.currentTarget.outerHTML = `
       <div class='h-full w-full grid place-items-center rounded-2xl bg-neutral-900 border border-[#2CB1A6]/40'>
         <svg viewBox='0 0 48 48' class='h-8 w-8' aria-hidden="true">
@@ -205,7 +206,7 @@ export default function App() {
 
         <div className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {[
-            {icon: Users2, title: "Executive Search (C‑Level y Directores)", desc: "Identificación, mapeo y atracción de líderes con probada capacidad para guiar al nivel operativo hacia objetivos estratégicos."},
+            {icon: Users2, title: "Executive Search (C-Level y Directores)", desc: "Identificación, mapeo y atracción de líderes con probada capacidad para guiar al nivel operativo hacia objetivos estratégicos."},
             {icon: Briefcase, title: "Headhunting para posiciones críticas", desc: "Cobertura acelerada de roles clave en áreas de crecimiento, transformación o turnaround."},
             {icon: LineChart, title: "Evaluación integral (competencias & liderazgo)", desc: "Assessment por competencias, entrevistas BEI y herramientas psicométricas para mitigar riesgos de contratación."},
             {icon: Target, title: "Onboarding y Success Planning", desc: "Acompañamiento de los primeros 90 días y planes de sucesión para continuidad del negocio."},
@@ -233,11 +234,11 @@ export default function App() {
           <ol className="mt-10 grid md:grid-cols-3 gap-6">
             {[
               {t:"Descubrimiento estratégico", d:"Alineamos objetivos, indicadores clave y cultura con el perfil del rol."},
-              {t:"Investigación & mapeo", d:"Inteligencia de mercado, long‑list y cartografía de talento regional."},
+              {t:"Investigación & mapeo", d:"Inteligencia de mercado, long-list y cartografía de talento regional."},
               {t:"Atracción & evaluación", d:"Entrevistas por competencias (BEI), referencias y validaciones técnicas."},
-              {t:"Short‑list & panel", d:"Presentación de candidatos de alto potencial con evidencias de logro."},
-              {t:"Cierre & oferta", d:"Negociación win‑win, detalles de compensación y due diligence."},
-              {t:"Onboarding 90‑días", d:"Acompañamiento para asegurar tracción temprana y transferencia de tácticas al nivel operativo."},
+              {t:"Short-list & panel", d:"Presentación de candidatos de alto potencial con evidencias de logro."},
+              {t:"Cierre & oferta", d:"Negociación win-win, detalles de compensación y due diligence."},
+              {t:"Onboarding 90-días", d:"Acompañamiento para asegurar tracción temprana y transferencia de tácticas al nivel operativo."},
             ].map((step, idx)=> (
               <li key={idx} className="relative rounded-2xl border border-neutral-800 p-6 bg-neutral-900/40">
                 <div className="absolute -top-3 -left-3 grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[#2CB1A6] to-[#1A5B6E] text-neutral-900 font-extrabold shadow">
@@ -301,7 +302,7 @@ export default function App() {
               <p className="mt-3 text-neutral-300">Corporativo Otavalo es una firma boutique de búsqueda ejecutiva que combina análisis de negocio, psicología organizacional y un potente ecosistema de networking directivo. Nuestro propósito es simple: <strong>colocar líderes que aceleran el valor</strong>.</p>
               <ul className="mt-6 grid gap-3 text-sm text-neutral-300">
                 <li className="flex items-start gap-2"><ShieldCheck className="mt-0.5 h-4 w-4 text-[#2CB1A6]"/> Ética, confidencialidad y ausencia de conflictos de interés.</li>
-                <li className="flex items-start gap-2"><Users2 className="mt-0.5 h-4 w-4 text-[#2CB1A6]"/> Enfoque en posiciones C‑Level, Dirección y Alta Gerencia.</li>
+                <li className="flex items-start gap-2"><Users2 className="mt-0.5 h-4 w-4 text-[#2CB1A6]"/> Enfoque en posiciones C-Level, Dirección y Alta Gerencia.</li>
                 <li className="flex items-start gap-2"><Trophy className="mt-0.5 h-4 w-4 text-[#2CB1A6]"/> Obsesión por métricas de impacto: EBITDA, NPS interno, rotación crítica.</li>
               </ul>
             </div>
@@ -322,7 +323,7 @@ export default function App() {
                     <p className="mt-1 text-neutral-300">Procesos ágiles sin sacrificar la calidad del fit cultural.</p>
                   </div>
                   <div className="rounded-xl border border-neutral-800 p-4">
-                    <div className="font-semibold">Acompañamiento post‑ingreso</div>
+                    <div className="font-semibold">Acompañamiento post-ingreso</div>
                     <p className="mt-1 text-neutral-300">Seguimiento y coaching ejecutivo para asegurar adopción.</p>
                   </div>
                 </div>
@@ -364,7 +365,7 @@ export default function App() {
                 <div>
                   <label className="text-sm text-neutral-300">Interés</label>
                   <select className="mt-1 w-full rounded-xl border border-neutral-700 bg-neutral-900 px-4 py-2 outline-none focus:border-[#2CB1A6]">
-                    <option>Executive Search (C‑Level)</option>
+                    <option>Executive Search (C-Level)</option>
                     <option>Headhunting de posiciones críticas</option>
                     <option>Evaluaciones y assessment</option>
                     <option>Onboarding & Success Planning</option>
@@ -375,7 +376,7 @@ export default function App() {
                   <label className="text-sm text-neutral-300">Mensaje</label>
                   <textarea rows={4} className="mt-1 w-full rounded-xl border border-neutral-700 bg-neutral-900 px-4 py-2 outline-none focus:border-[#2CB1A6]" placeholder="Cuéntanos brevemente el reto o posición a cubrir…"/>
                 </div>
-                <button className="rounded-xl bg-gradient-to-br from-[#2CB1A6] to-[#1A5B6E] px-6 py-3 font-semibold text-neutral-900">Solicitar propuesta</button>
+                <button className="rounded-xl bg-gradient-to-br from-[#2CB1A6] to-[#1A5B6E] px-6 py-3 font-semibold text-neutral-900 shadow hover:shadow-[rgba(44,177,166,0.25)]">Solicitar propuesta</button>
                 <p className="text-xs text-neutral-500">Al enviar, aceptas nuestro manejo confidencial de la información y tratamiento conforme a la normativa ecuatoriana aplicable.</p>
               </div>
             </form>
