@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Building2, Gem, Trophy, Users2, ShieldCheck, Globe2, Mail, Phone, MapPin, Briefcase, LineChart, Sparkles, Target, CheckCircle2 } from "lucide-react";
 
